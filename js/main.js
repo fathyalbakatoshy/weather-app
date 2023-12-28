@@ -53,15 +53,15 @@ function display(obj) {
                   </div>
                 </div>
                 <p>${obj.current.condition.text}</p>
-                <span><img src="img/icon-compass.png" alt="">${
+                <span><img src="img/icon-umberella.png" alt="">${
                   obj.current.wind_degree
                 }%</span>
-                <span><img src="img/icon-compass.png" alt="">${
-                  obj.current.wind_kph
-                }km/h</span>
-                <span><img src="img/icon-compass.png" alt="">${
-                  obj.current.wind_dir
-                }</span>
+        <span><img src="img/icon-wind.png" alt="">${
+          obj.current.wind_kph
+        }km/h</span>
+        <span><img src="img/icon-compass.png" alt="">${
+          obj.current.wind_dir
+        }</span>
               </div>
             </div>
         </div>
