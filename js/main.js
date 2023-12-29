@@ -21,7 +21,7 @@ btn.addEventListener("click", function () {
 
 async function getData(key) {
   let data = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=99f3594091864e8b87b113114232812&q=${key}&days=4`
+    `https://api.weatherapi.com/v1/forecast.json?key=4ce904f1f4d24181b3314622232912&q=${key}&days=4`
   );
   let rus = await data.json();
   display(rus);
@@ -33,7 +33,7 @@ function display(obj) {
             <div class="first-box">
               <div class="header d-flex justify-content-between">
                 <h3 class="day">${new Date(
-                  obj.forecast.forecastday[2].date
+                  obj.forecast.forecastday[1].date
                 ).toLocaleDateString("en", { weekday: "long" })}</h3>
                 <h3 class="data">${
                   new Date(obj.location.localtime).toLocaleDateString("en", {
